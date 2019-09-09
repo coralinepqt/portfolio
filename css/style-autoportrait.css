@@ -1,0 +1,61 @@
+html {
+    font-family: 'Thasadith', sans-serif;
+}
+
+body {
+    text-align: justify;
+}
+
+
+/***********ENTETE************/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+
+header img {
+    width: 100%;
+    max-width: 60px;
+}
+
+
+/**************CORPS*********/
+
+main {
+    position: relative;
+    width: calc(100% - 120px);
+    left: 120px;
+}
+
+#images {
+    max-width: 100%;
+    margin: 40px 20px 0 0;
+}
+
+#autoportrait {
+    width: 30%;
+    float: left;
+    margin: 0 40px 20px 0;
+}
+
+ul {
+    margin-left: 40%;
+}
+
+#reste {
+    clear: left;
+}
+
+figure {
+    display: inline-block;
+    width: 24%;
+    margin: 0;
+    font-size: 14px;
+}
+
+figure img {
+    width: 100%;
+}
