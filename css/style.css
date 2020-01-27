@@ -1,0 +1,414 @@
+html {
+    font-family: 'Thasadith', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    min-height: 100%vh;
+    margin: 0;
+    display: block;
+    text-align: justify;
+}
+
+
+/***********************TETE**************/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+header img {
+    width: 100%;
+    max-width: 160px;
+}
+
+
+/**********************NAVIGATION***************/
+
+nav {
+    margin: auto 0;
+}
+
+nav li {
+    font-size: 20px;
+    list-style-type: none;
+    text-decoration-line: none;
+    margin: 8px;
+    border-left: solid;
+    padding-left: 10px;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+#partie {
+    font-size: 16px;
+    position: relative;
+    display: none;
+}
+
+.titre:visited #partie {
+    display: block;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*******************CORPS********************/
+
+.index{
+    padding: 0 20px 0 250px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-weight: normal;
+    margin-top: 0;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/**********ACCUEIL**********/
+
+.accueil {
+    position: relative;
+    height: 100vh;
+    padding-top: 20px;
+    background-image: url(../images/Fond.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil p {
+    font-weight: normal;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+/********GALERIE*********/
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.projet {
+    width: 32%;
+    position: relative;
+    text-align: center;
+    word-wrap: break-word;
+    color: white;
+    font-size: 2vw;
+    vertical-align: middle;
+}
+
+#galerie img {
+    width: 100%;
+}
+
+.projet img {
+    border-radius: 100%;
+    position: relative;
+    opacity: 0.4;
+    filter: blur(1px) grayscale(100%);
+    display: block;
+}
+
+.NomProjet {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+    color: black;
+    font-weight: bold;
+}
+
+.projet:hover .NomProjet {
+    display: none;
+    z-index: 1;
+}
+
+.projet:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+/**************************PAGES PROJET*******************/
+
+.flecheRetour{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+
+.flecheRetour img {
+    width: 100%;
+    max-width: 60px;
+}
+
+/***************PICTOGRAMMES************/
+
+.corps {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-right: 20px;
+    position: relative;
+    width: calc(100% - 120px);
+    left: 120px;
+    box-sizing: border-box;
+    
+}
+
+#storyboard {
+    width: 40%;
+    float: left;
+    margin: 0 30px 20px 0;
+}
+
+.personnages {
+    width: 100%;
+    clear: left;
+}
+
+.personnages img {
+    width: 100%;
+    position: relative;
+}
+
+.croquis img {
+    width: 30%;
+    position: relative;
+    left: 10%;
+}
+
+
+/******************PRESENTATION********/
+
+#corps {
+    position: relative;
+    display: flex;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+#presentation p {
+    margin-right: 30px;
+    font-size: 1.5vw;
+    margin-top: 0;
+    text-align: justify;
+}
+
+#presentation img {
+    min-height: 100%;
+    height: 100%;
+    width: 30%;
+    z-index: 1;
+}
+
+
+/************COMPETENCES**************/
+
+#competences {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.categories:not(:last-of-type) {
+    max-width: 33%;
+    margin-right: 10px;
+}
+
+.categories:not(:first-of-type) {
+    max-width: 33%;
+    margin-left: 10px;
+}
+
+.logo {
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 60%;
+}
+
+.logo img {
+    max-width: 50%;
+    position: absolute;
+    right: 25%;
+}
+
+
+/****************PORTRAIT CHINOIS*****/
+
+#intro {
+    font-size: 25px;
+}
+
+#portrait {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.portraitChinois {
+    max-width: 20%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.portraitChinois img {
+    max-width: 100%;
+    border-radius: 100%;
+    position: relative;
+    filter: grayscale(90%);
+    opacity: 0.4;
+}
+
+.un {
+    position: absolute;
+    align-content: center;
+    font-size: 2vw;
+    text-align: center;
+    bottom: 45%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+}
+
+.portraitChinois:hover img {
+    filter: none;
+    display: block;
+    z-index: 1;
+    opacity: 1;
+}
+
+
+/***************CONTACT*************/
+
+#formulaireContact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 600px;
+}
+
+#coordonnees {
+    max-width: 40%;
+    position: relative;
+    height: 400px;
+}
+
+#coordonnees p {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 40%;
+    right: 40px;
+    word-wrap: break-word;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.reseaux {
+    position: relative;
+}
+
+.reseaux img {
+    position: relative;
+    max-width: 20px;
+}
+
+#formulaire {
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    max-width: 60%;
+    right: 0;
+    border-left-style: solid;
+    border-width: 1px;
+    border-color: black;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bouton {
+    margin-top: 10px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 12px;
+    border: 0;
+    height: 25px;
+}
+
+.logoC {
+    width: 100px;
+    ;
+    position: absolute;
+    top: 450px;
+    left: 43%;
+}
+
+.logoC img {
+    width: 100px;
+}
+
+
+/**********************PIED*******************/
+
+footer {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
